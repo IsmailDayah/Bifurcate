@@ -1,0 +1,38 @@
+{
+  "comment": "Frozen known-answer vectors. root_key = 00..1f. Any change to the chaos engine, KDF, key schedule, S-box or Feistel core breaks these on purpose \u2014 and any cross-platform drift would too.",
+  "root_key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+  "enc_seed": "7469a213f6509cb20bb79580b4a022941e730690ee28a1b373d6a37d6ef9f2c4",
+  "mac_key": "d617604aef824f8c94e2a7fe5636a7c29144cd0176cae5c6c1ea46ddf80cc23e",
+  "keystream_64": "96a69b4eb332e95cefc5caa2236c5eb5a0dc1d662df388f5177049c8867a8ea6b3d11be4dd08468ccd11008135633b1bc1c4c1f9b7b98296867d46be0dd9eec1",
+  "sbox": "0ede61d6c7e84f743e8d34ad7564ebfc78e4a4d4f64b5343a5c3565452e273e1125b0bd2ba9f60a3038f158ad01a7b45654c334405c067aa9369319571e74724a99d7ced85093d7e9876c2921f3f72b2af1eab3758e66b3ccb3662306ed8ee90273adba887aedf559e0f9a775a79382e0618b413cef7d7571097800ac6bf8bbd6d02e06f41f82af3fd5f596af4914decb6f214b128f1e5a15019bc4a84c999ac5df5b0835168f02229f91c402f94fa422148a7bb049cd32b2589392026da7fb8d5cc160dbed97de3ff82b9b72ccfc4c1dd3b6335810011cd8c46ea01071bd1fbfe8e7a86c84970170c88082d661ddca0b55e6c23a2cac5ef5ce932b34e9ba696",
+  "round_keys": [
+    "6312eb6200b56c91",
+    "fc0279026fcde11f",
+    "f1005de8d2f0ab03",
+    "d032a3ab76ba1a36",
+    "37486a6f61ed085c",
+    "d41c80dd1ddd3015",
+    "f50294f057ab439a",
+    "a91e163582fa8081",
+    "a29b11bf60aca1c9",
+    "a9ce66613650d0bb",
+    "cb48a76d1332b6a5",
+    "a809c7e64c5ae594"
+  ],
+  "rotations": [
+    6,
+    4,
+    1,
+    5,
+    7,
+    7,
+    3,
+    1,
+    4,
+    4,
+    6,
+    7
+  ],
+  "plaintext_block": "00112233445566778899aabbccddeeff",
+  "ciphertext_block": "922429512a9376518c4e1b8bc20e87df"
+}

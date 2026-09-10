@@ -1,0 +1,30 @@
+{
+  "name": "@bifurcate/cipher",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "TypeScript port of the Bifurcate cipher — cross-validated against the Python reference.",
+  "main": "./dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node dist/test/parity.js",
+    "test:vitest": "vitest run"
+  },
+  "dependencies": {
+    "@noble/hashes": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js"
+    }
+  },
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ]
+}

@@ -1,0 +1,15 @@
+# Design system tokens.
+# Dark theme only: projectors love dark surfaces with glowing lines.
+[theme]
+base = "dark"
+primaryColor = "#F59E0B"              # amber-gold: the chaotic keystream (the trail)
+backgroundColor = "#0B1220"           # deep slate
+secondaryBackgroundColor = "#111A2E"  # raised surface
+textColor = "#F8FAFC"                 # off-white ink
+font = "sans serif"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

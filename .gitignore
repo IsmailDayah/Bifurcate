@@ -1,0 +1,36 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build output
+.next/
+web/out/
+cipher-ts/dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# caches
+.cache/
+web/.cache/
+cipher-ts/.cache/
+
+# virtual environments
+.venv/
+venv/
+env/
+
+# secrets - never commit
+.env*
+!.env.example
+*.pem
+*.key
+keys/
+kaggle.json
+
+# local tooling
+.vercel/
+
+# os
+.DS_Store
+Thumbs.db

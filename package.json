@@ -1,0 +1,11 @@
+{
+  "name": "bifurcate",
+  "private": true,
+  "description": "Bifurcate — a chaos-seeded Feistel cipher. Python reference + TypeScript web port.",
+  "scripts": {
+    "build": "pnpm --filter @bifurcate/cipher build && pnpm --filter web build",
+    "dev": "pnpm --filter web dev",
+    "test:cipher": "pnpm --filter @bifurcate/cipher test"
+  },
+  "packageManager": "pnpm@10.15.1"
+}

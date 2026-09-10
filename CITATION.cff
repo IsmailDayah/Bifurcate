@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "Bifurcate: a chaos-seeded hybrid Feistel cipher"
+abstract: >-
+  A 128-bit block cipher with a 256-bit key and 12 Feistel rounds whose
+  substitution table and round keys are grown from the passphrase by a
+  deterministic integer logistic map, so two passphrases behave as two
+  different ciphers. The chaotic states are whitened through SHA-256:
+  chaos supplies key-dependent structure, SHA-256 supplies statistical
+  quality. Messages are sealed in a .bfc container under CBC with a random
+  IV and authenticated end-to-end with encrypt-then-MAC (HMAC-SHA256) over
+  the whole container, headers included, so mode and hybrid flags cannot be
+  downgraded undetected; an RSA-2048-OAEP envelope wraps a random session
+  key for hybrid mode. A Python reference implementation using only the
+  standard library (bar RSA) is accompanied by an independent TypeScript
+  port, and both reproduce the same 36 known-answer vectors byte for byte.
+  Limitations are stated plainly: there is no formal cryptanalysis, the
+  implementation is not constant-time, and it has had no public review.
+type: software
+authors:
+  - family-names: Abdullahi
+    given-names: Ismail Dayah
+    alias: IsmailDayah
+license: MIT
+repository-code: "https://github.com/IsmailDayah/Bifurcate"
+url: "https://bifurcate.vercel.app"
+version: 0.1.0
+date-released: 2026-09-10
+keywords:
+  - block cipher
+  - Feistel network
+  - chaos-based cryptography
+  - logistic map
+  - key-derived S-box
+  - authenticated encryption
+  - encrypt-then-MAC
+  - key derivation
+  - cross-validation
